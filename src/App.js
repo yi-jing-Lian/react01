@@ -34,9 +34,10 @@ function App() {
           <Sidebar />
           <Center>
             <Top />
-            <Switch>
+            <Dashboard/>
+            {/* <Switch>
               <Route exact path="/"><Dashboard/></Route>
-            </Switch>
+            </Switch> */}
           </Center>
           <Rightbar />
         </All>

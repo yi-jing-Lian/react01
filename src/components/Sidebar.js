@@ -4,6 +4,8 @@ import styled from 'styled-components'
 import { GrPieChart } from "react-icons/gr";
 import {RiShoppingBag3Line,RiArrowRightSLine} from "react-icons/ri"
 import {BsFolder,BsBook} from "react-icons/bs"
+import headphoto from "./../img/headphoto.jpg"
+import "./Sidebar.css"
 
 const fontsize = {
     textsize:'14px',
@@ -50,16 +52,70 @@ const Linkstyle={
     'color':'black'
 }
 
+// 5/5上課
+
+const Account=styled.div`
+    display:flex;
+    text-align:center;
+    flow-wrap:norow;
+    algn-item:center;
+    p{
+        margin:4px;
+        font-size:18px;
+    }
+    
+`
+const Favorites=styled.div`
+    
+    text-align:left;
+    justify-content:center;
+    div{
+        display:flex;
+        flow-wrap:nowrap;
+        p{
+            margin:4px;
+            font-size:18px;
+        }
+        ul{
+            margin:0;
+            padding:0;
+            margin-left:20px;
+        }
+        li{
+            margin:4px;
+            font-size:16px;
+        }
+
+    }
+    
+`
+
+
+
 function Sidebar(){
     return (
         <Side>
-            <account>
-            </account>
-            <favorites>
-            </favorites>
+            <Account>
+                <img src={headphoto} alt="headphoto" className="headphoto"></img>
+                <p> lian</p>
+            </Account>
+            <Favorites>
+                <div>
+                    <p>Favorites</p>
+                    <p>Recently</p>
+                </div>
+                <div>
+                    <ul>
+                        <li>Overview</li>
+                        <li>Projects</li>
+                    </ul>
+                    
+                </div>                
+            </Favorites>
             <dashboards>
                 <Title>Dashboards</Title> 
                 <Text>
+                    {/* <i className="arrow right"></i>test */}
                     <RiArrowRightSLine style={Iconstyle}/><Link to="/"  style={Linkstyle}><GrPieChart/> Default </Link>
                 </Text>    
                 <Text>
