@@ -1,3 +1,6 @@
+### website demo:https://yi-jing-lian.github.io/react_HW3/
+### figma UI:https://www.figma.com/community/file/1210542873091115123/Dashboard-UI-Kit---Dashboard
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
